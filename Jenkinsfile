@@ -40,9 +40,9 @@
 
 
 pipeline {
-    stages{
-        stage('Initial'){
-            steps{
+    stages {
+        stage('Initial') {
+            steps {
                 sh 'echo Hello from this job, now we have: $(time) !'
             }
         }
