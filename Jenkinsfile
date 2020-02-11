@@ -42,7 +42,9 @@
 pipeline {
     stages{
         stage('Initial'){
-            sh 'echo Hello from this job, now we have: $(time) !'
+            steps{
+                sh 'echo Hello from this job, now we have: $(time) !'
+            }
         }
     }
 }
