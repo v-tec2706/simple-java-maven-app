@@ -29,5 +29,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Summary') {
+            steps {
+                sh 'echo heloooo! it works'
+                sh './jenkins/scripts/deliver.sh'
+            }
+        }
     }
 }
