@@ -26,5 +26,10 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Summary') {
+            steps {
+                sh './jenkins/myScripts/myScript.sh'
+            }
+        }
     }
 }
