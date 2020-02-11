@@ -29,7 +29,7 @@ pipeline {
         stage('Summary') {
             steps {
                 sh 'echo heloooo! it works'
-                sh './jenkins/myScripts/myScript.sh'
+                sh './jenkins/scripts/deliver.sh'
             }
         }
     }
